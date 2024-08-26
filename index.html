@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz Programação</title>
+    <title>Programing Quizz</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scripts.js"></script>
 </head>
 <body>
-    <h1>Teste</h1>
+    <!-- Score board -->
+    <h1 id="main-title">Programing quizz</h1>
+    <div id="score-container">
+        <p id="display-score"><span>90</span>%</p>
+        <p>You got it right<span id="correct-answer">0</span> de <span id="question-qty">10</span> questions</p>
+        <button id="restart">Repeat quizz!</button>
+    </div>
+    <!-- Question container -->
+    <div id="question-container">
+        <p id="question">
+            <span id="question-number">1</span> de
+            <span id="question-text">What's the measuring unit of meters</span>
+        </p>
+        <div id="answers-box">
+            <button class="correct-answer"><span class="btn-letter">a</span> <span id="question-answer">m</span></button>
+            <button class="wrong-answer"><span class="btn-letter">b</span> <span id="question-answer">km</span></button>
+            <button><span class="btn-letter">c</span> <span id="question-answer">ms</span></button>
+            <button><span class="btn-letter">d</span> <span id="question-answer">r</span></button>
+        </div>
+    </div>
+    <!-- Template de resposta --> 
+     <button class="answer-template-hide"><span class="btn-letter">a</span> <span></span id="question-answer">m</button>
 </body>
 </html>
