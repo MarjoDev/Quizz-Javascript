@@ -3,32 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programing Quizz</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quizz in JS!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
-    <!-- Score board -->
-    <h1 id="main-title">Programing quizz</h1>
-    <div id="score-container">
+    <h1 id="main-title">Programing Quizz!</h1>
+    <div id="score-container" class="hide">
+        <h2>Congratulations!</h2>
         <p id="display-score"><span>90</span>%</p>
-        <p>You answered correctly<span id="correct-answers"> 0</span> of <span id="question-qty">10</span> questions</p>
-        <button id="restart">Repeat quizz!</button>
+        <p>You got <span id="correct-answers">0</span> of <span id="questions-qty">10</span> questions.</p>
+        <button id="restart">Restart quizz!</button>
     </div>
-    <!-- Question container -->
-    <div id="question-container">
-        <p id="question">
-            <span id="question-number">1</span> de
-            <span id="question-text">What's the measuring unit of meters</span>
-        </p>
-        <div id="answers-box">
-            <button class="correct-answer"><span class="btn-letter">a</span> <span id="question-answer">m</span></button>
-            <button class="wrong-answer"><span class="btn-letter">b</span> <span id="question-answer">km</span></button>
-            <button><span class="btn-letter">c</span> <span id="question-answer">ms</span></button>
-            <button><span class="btn-letter">d</span> <span id="question-answer">r</span></button>
-        </div>
+    <div id="quizz-container">
+        <p id="question"><span id="question-number">1</span> - <span id="question-text">What is the measuring unit of meters?</span></p>
+        <div id="answers-box"></div>
     </div>
-    <!-- Template de resposta --> 
-     <button class="answer-template-hide"><span class="btn-letter">a</span> <span></span id="question-answer">m</button>
+
+    <!-- TEMPLATE ANSWER -->
+    <button class="answer-template hide"><span class="btn-letter"></span> <span class="question-answer"></span></button>
 </body>
 </html>
